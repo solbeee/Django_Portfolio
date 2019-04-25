@@ -10,8 +10,10 @@ hello world
 
 {%  endfor %}
 
+
 <!doctype html>
 <html lang="en">
+{%  load static %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -84,6 +86,7 @@ hello world
     <div class="container">
       <h1 class="jumbotron-heading">Hello World</h1>
       <p class="lead text-muted">blah blah blah blah</p>
+      <img src="{% static 'me.jpg' %}" height=300></img>
       <p>
         <a href="mailto:soltborjas@gmail.com" class="btn btn-primary my-2">Email Me</a>
       </p>
@@ -242,8 +245,7 @@ hello world
     <p class="float-right">
       <a href="#">Back to top</a>
     </p>
-    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+    <p>Sol Borjas &copy; 2019</p>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
